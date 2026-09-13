@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', sans-serif;
+    --font-geist-mono: 'Geist Mono', monospace;
+  }
+  
+  body {
+    @apply bg-background text-text_primary font-sans antialiased overflow-x-hidden selection:bg-accent_flame selection:text-white;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-surface/80 backdrop-blur-md border border-border_col shadow-lg;
+  }
+  
+  .heading-primary {
+    @apply text-3xl md:text-5xl font-bold tracking-tight text-white mb-6;
+  }
+  
+  .heading-secondary {
+    @apply text-2xl md:text-3xl font-semibold tracking-tight text-white mb-8 border-b border-border_col pb-4;
+  }
+  
+  .mono-label {
+    @apply font-mono text-sm tracking-wider uppercase text-text_secondary;
+  }
+}
