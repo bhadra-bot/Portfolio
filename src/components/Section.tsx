@@ -8,4 +8,4 @@ export default function Section({ id, title, children }: { id: string, title: st
       <div className="space-y-8">{children}</div>
     </motion.section>
   );
-}\n
+}

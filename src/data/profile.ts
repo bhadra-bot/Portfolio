@@ -42,4 +42,4 @@ export const profile = {
     "Achieved 1st place in Asia and 21st worldwide at the Spaceport America Cup 2024 with Team Abhyuday.",
     "Achieved 8th place worldwide for technical design report in the SUAS competition 2025 with IITM-SUAS"
   ]
-};\n
+};

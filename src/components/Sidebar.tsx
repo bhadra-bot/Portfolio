@@ -28,4 +28,4 @@ export default function Sidebar() {
       </div>
     </header>
   );
-}\n
+}
