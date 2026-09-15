@@ -1,22 +1,37 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import Sidebar from "@/components/Sidebar";
+import Navbar from "@/components/Navbar";
+import { personalInfo } from "@/data/profile"; 
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const geistMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
 
 export const metadata: Metadata = {
-  title: "Bhadra Sreelatha - Academic Portfolio",
-  description: "Academic Portfolio of Bhadra Sreelatha",
+  title: "Bhadra Sreelatha | Thermofluids & Combustion Researcher",
+  description: "Personal academic portfolio of Bhadra Sreelatha.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased max-w-6xl mx-auto flex flex-col md:flex-row min-h-screen`}>
-        <Sidebar />
-        <main className="flex-1 px-6 py-12 md:px-16 md:py-24 overflow-x-hidden">{children}</main>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${inter.variable} ${geistMono.variable} flex flex-col min-h-screen`}>
+        <Navbar />
+        <div className="flex-grow"> 
+          {children}
+        </div>
+        
+        <footer className="py-8 text-center border-t border-border_col mt-20">
+          <p className="font-mono text-xs text-text_secondary">
+            Designed & Built for {personalInfo.name} <br/>
+            Thermofluids & Aerospace Engineering Research Portfolio
+          </p>
+        </footer>
       </body>
     </html>
   );
-}\n
+}
