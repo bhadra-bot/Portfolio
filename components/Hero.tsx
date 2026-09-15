@@ -68,7 +68,7 @@ export default function Hero() {
           <div className="relative w-64 h-64 md:w-80 md:h-80 xl:w-96 xl:h-96 rounded-2xl overflow-hidden border border-border_col shadow-[0_0_40px_rgba(0,0,0,0.5)]">
             {/* The grayscale filter makes it blend with the dark theme, and it colors on hover! */}
             <Image 
-              src="/profile.jpg" 
+              src="/Portfolio/profile.jpg" 
               alt={personalInfo.name}
               fill
               className="object-cover transition-all duration-500 grayscale hover:grayscale-0"
