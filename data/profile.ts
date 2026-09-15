@@ -179,7 +179,19 @@ export const achievements = [
 ];
 
 export const extracurricular = [
-  { title: "SmartLock360, Product Design Club, Center For Innovation, IIT M", desc: "Designed & developed a prototype of an anti-theft automatic cycle lock. Conducted market analysis to ascertain a target market and cost." },
-  { title: "Dance Club, IIT M", desc: "Secured top positions in multiple national-level dance competetions" },
-  { title: "Teaching Assistantship", desc: "Low speed Aerodynamics laboratory" }
+  { 
+    title: "SmartLock360 | Product Design Club, Center For Innovation", 
+    org: "IIT Madras",
+    desc: "Led the end-to-end design and development of an innovative anti-theft automatic cycle lock prototype. Spearheaded comprehensive market research to identify target demographics, evaluate commercial viability, and accurately estimate manufacturing costs for potential mass production." 
+  },
+  { 
+    title: "Associate Manager | Entrepreneurship-Cell (E-Cell)", 
+    org: "IIT Madras",
+    desc: "Coordinated and successfully executed large-scale, national-level entrepreneurial events. Managed logistical operations, facilitated communication between various stakeholders, and played a pivotal role in fostering a vibrant startup and innovation ecosystem within the student community." 
+  },
+  { 
+    title: "Inter-Collegiate Dance Team", 
+    org: "IIT Madras",
+    desc: "Represented the institute as an active member of the inter-collegiate dance team. Competed and consistently secured top podium finishes at various prestigious national-level cultural festivals, demonstrating strong teamwork, discipline, and time management alongside rigorous academic commitments." 
+  }
 ];

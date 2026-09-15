@@ -15,10 +15,10 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { name: "01. Experience", href: "#experience" },
-    { name: "02. Projects", href: "#projects" },
-    { name: "03. Publications", href: "#publications" },
-    { name: "04. Education", href: "#education" },
+    { name: "Academia", href: "/education" },
+    { name: "Research & Technical Experience", href: "/research" },
+    { name: "Extra-Curriculars", href: "/extra-curriculars" },
+    { name: "Curriculum Vitae", href: "/cv" },
   ];
 
   return (
@@ -28,8 +28,9 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
-        <Link href="#" className="font-mono text-accent_flame text-lg font-semibold tracking-tighter hover:text-accent_flow transition-colors">
-          BS<span className="text-text_secondary">.</span>
+        {/* Changed href from "#" to "/" to route back to Home */}
+        <Link href="/" className="font-mono text-accent_flame text-lg font-semibold tracking-tighter hover:text-accent_flow transition-colors">
+          BS
         </Link>
         
         <nav className="hidden md:flex gap-8">

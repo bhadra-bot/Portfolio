@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: theme('colors.foreground');
+  background: theme('colors.background');
+  line-height: 1.6;
+}
+html { scroll-behavior: smooth; }\n
