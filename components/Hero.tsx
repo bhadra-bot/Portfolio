@@ -1,17 +1,16 @@
 "use client";
 import { motion } from "framer-motion";
 import { personalInfo } from "@/data/profile";
-import CanvasFlowField from "./CanvasFlowField";
+// REMOVED CanvasFlowField import from here
 import { MapPin, GraduationCap, Mail } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image"; // Added for the photo
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden">
-      <CanvasFlowField />
+      {/* REMOVED <CanvasFlowField /> from here */}
       
-      {/* Changed to a flex container that splits into 2 columns on large screens */}
       <div className="max-w-6xl mx-auto px-6 w-full z-10 relative flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-8">
         
         {/* LEFT COLUMN: Text Content */}
@@ -70,7 +69,7 @@ export default function Hero() {
           <div className="relative w-64 h-64 md:w-80 md:h-80 xl:w-96 xl:h-96 rounded-2xl overflow-hidden border border-border_col shadow-[0_0_40px_rgba(0,0,0,0.5)]">
             {/* The grayscale filter makes it blend with the dark theme, and it colors on hover! */}
             <Image 
-              src="/profile.jpg" 
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/profile.jpg`} 
               alt={personalInfo.name}
               fill
               className="object-cover transition-all duration-500 grayscale hover:grayscale-0"

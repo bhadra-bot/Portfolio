@@ -40,7 +40,7 @@ const ProjectSlider = ({ images, title }: { images: string[], title: string }) =
           className="absolute inset-0"
         >
           <Image 
-            src={images[currentIndex]} 
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${images[currentIndex]}`} 
             alt={`${title} - Image ${currentIndex + 1}`} 
             fill 
             className="object-cover"
