@@ -8,10 +8,9 @@ export default function Experience() {
 
   return (
     <section id="experience" className="w-full mb-32">
-      {/* Expanded to max-w-6xl for a broader layout */}
       <div className="max-w-6xl mx-auto px-6 w-full">
         
-        {/* Heading - Removed the '01.' and replaced SectionHeading */}
+        {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +23,6 @@ export default function Experience() {
           <div className="h-px bg-border_col flex-grow opacity-50"></div>
         </motion.div>
         
-        {/* Switched from md to lg breakpoints for a wider spread, and increased gap */}
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
           
           {/* Timeline Tabs */}
@@ -45,7 +43,7 @@ export default function Experience() {
           </div>
 
           {/* Content */}
-          <div className="lg:w-3/4 min-h-[300px]">
+          <div className="lg:w-3/4 min-h-[250px]">
             <motion.div
               key={activeTab}
               initial={{ opacity: 0, y: 10 }}
@@ -65,19 +63,16 @@ export default function Experience() {
               {experience[activeTab].title && (
                 <div className="bg-surface/30 border-l-2 border-border_col p-4 rounded-r mt-4 mb-6">
                   <p className="text-white font-medium text-base">
-                    "{experience[activeTab].title}"
+                    {experience[activeTab].title}
                   </p>
                 </div>
               )}
 
-              <ul className="flex flex-col gap-5">
-                {experience[activeTab].points.map((point, i) => (
-                  <li key={i} className="flex gap-4 text-text_secondary text-base leading-relaxed">
-                    <span className="text-accent_flame mt-1">▹</span>
-                    {point}
-                  </li>
-                ))}
-              </ul>
+              {/* Formatted as a sleek, single paragraph instead of bullet points */}
+              <p className="text-text_secondary text-lg leading-relaxed">
+                {experience[activeTab].points[0]}
+              </p>
+
             </motion.div>
           </div>
 
