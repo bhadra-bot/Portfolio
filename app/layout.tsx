@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import { personalInfo } from "@/data/profile"; // Added this import for the footer
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const geistMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
+import { personalInfo } from "@/data/profile";
+import CanvasFlowField from "@/components/CanvasFlowField"; // Imported the simulation
+import { MapPin, GraduationCap, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Bhadra Sreelatha | Thermofluids & Combustion Researcher",
-  description: "Personal academic portfolio of Bhadra Sreelatha, Aerospace Engineering student at IIT Madras researching combustion instability, thermoacoustics, and fluid mechanics.",
+  description: "Personal academic portfolio of Bhadra Sreelatha.",
 };
 
 export default function RootLayout({
@@ -19,19 +17,32 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} ${geistMono.variable} flex flex-col min-h-screen`}>
+      <body className="flex flex-col min-h-screen">
+        
+        {/* GLOBAL BACKGROUND SIMULATION */}
+        {/* pointer-events-none ensures you can still click buttons through the canvas */}
+        <div className="fixed inset-0 -z-10 pointer-events-none">
+          <CanvasFlowField />
+        </div>
+
         <Navbar />
-        {/* Added flex-grow to push footer to the bottom */}
-        <div className="flex-grow"> 
+        
+        <div className="flex-grow z-10"> 
           {children}
         </div>
         
-        {/* Footer moved here from page.tsx */}
-        <footer className="py-8 text-center border-t border-border_col mt-20">
-          <p className="font-mono text-xs text-text_secondary">
-            Designed & Built for {personalInfo.name} <br/>
-            Thermofluids & Aerospace Engineering Research Portfolio
+        <footer className="py-12 text-center border-t border-border_col mt-20 flex flex-col items-center justify-center gap-2 z-10 bg-background/80 backdrop-blur-sm">
+          <p className="text-lg font-bold text-white tracking-wide">
+            {personalInfo.name}
           </p>
+          <a 
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${personalInfo.email}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 border border-accent_flame text-accent_flame hover:bg-accent_flame/10 font-mono text-sm transition-colors rounded-sm flex items-center gap-2"
+            >
+              <Mail size={16} /> {personalInfo.email}
+            </a>
         </footer>
       </body>
     </html>

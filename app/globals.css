@@ -30,3 +30,14 @@
     @apply font-mono text-sm tracking-wider uppercase text-text_secondary;
   }
 }
+
+@layer base {
+  html, body {
+    font-family: Calibri, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  }
+}
+
+/* Force all utility text classes to use Calibri */
+* {
+  font-family: Calibri, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+}

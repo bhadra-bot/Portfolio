@@ -21,7 +21,7 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="w-full lg:w-3/5"
         >
-          <p className="mono-label text-accent_flow mb-4">Hello, my name is</p>
+          <p className="mono-label text-accent_flow mb-4">Hello, This is</p>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-white mb-6">
             {personalInfo.name}
           </h1>
@@ -43,7 +43,9 @@ export default function Hero() {
 
           <div className="flex gap-4">
             <a 
-              href={`mailto:${personalInfo.email}`}
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${personalInfo.email}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 border border-accent_flame text-accent_flame hover:bg-accent_flame/10 font-mono text-sm transition-colors rounded-sm flex items-center gap-2"
             >
               <Mail size={16} /> Contact Me
@@ -68,7 +70,7 @@ export default function Hero() {
           <div className="relative w-64 h-64 md:w-80 md:h-80 xl:w-96 xl:h-96 rounded-2xl overflow-hidden border border-border_col shadow-[0_0_40px_rgba(0,0,0,0.5)]">
             {/* The grayscale filter makes it blend with the dark theme, and it colors on hover! */}
             <Image 
-              src="/Portfolio/profile.jpg" 
+              src="/profile.jpg" 
               alt={personalInfo.name}
               fill
               className="object-cover transition-all duration-500 grayscale hover:grayscale-0"

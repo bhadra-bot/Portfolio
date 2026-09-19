@@ -46,7 +46,7 @@ export default function CVPage() {
             className="w-full h-[75vh] md:h-[85vh] border border-border_col rounded-sm overflow-hidden glass-panel bg-surface/50"
           >
             <object 
-              data="/Portfolio/Bhadra_Sreelatha_CV.pdf" 
+              data="/Bhadra_Sreelatha_CV.pdf" 
               type="application/pdf" 
               className="w-full h-full"
             >
@@ -56,7 +56,7 @@ export default function CVPage() {
                   Your browser does not support viewing PDFs directly.
                 </p>
                 <a 
-                  href="/Portfolio/Bhadra_Sreelatha_CV.pdf" 
+                  href="/Bhadra_Sreelatha_CV.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="px-6 py-3 border border-border_col text-white hover:border-accent_flow transition-colors font-mono text-sm rounded-sm"

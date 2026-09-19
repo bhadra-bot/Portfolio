@@ -85,8 +85,8 @@ export const engineeringProjects = [
     description: "Engineered, manufactured, and flight-tested a long-endurance fixed-wing UAV from raw composites to final assembly for maritime rescue operations.",
     // Image paths (make sure to use the /Portfolio prefix for GitHub Pages)
     images: [
-      "/Portfolio/uav-1.jpg", 
-      "/Portfolio/uav-2.jpg"
+      "/uav-1.jpeg", 
+      "/uav-2.jpeg"
     ]
   },
   {
@@ -96,8 +96,8 @@ export const engineeringProjects = [
     duration: "May 2024 - June 2025",
     description: "Developed and simulated a fully autonomous, vision-equipped UAV using the ROS framework and ArduPilot for the Student Unmanned Aerial Systems mission.",
     images: [
-      "/Portfolio/suas-1.jpg", 
-      "/Portfolio/suas-2.jpg"
+      "/suas-1.jpeg", 
+      "/suas-2.jpeg"
     ]
   },
   {
@@ -107,8 +107,8 @@ export const engineeringProjects = [
     duration: "May 2023 - June 2024",
     description: "Engineered India's first SRAD hybrid rocket engine and simulated recovery parachute dynamics for a 10,000 ft altitude deployment.",
     images: [
-      "/Portfolio/rocket-1.jpg", 
-      "/Portfolio/rocket-2.jpg"
+      "/rocket-1.jpeg", 
+      "/rocket-2.jpeg"
     ]
   }
 ];
