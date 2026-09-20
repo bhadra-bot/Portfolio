@@ -30,7 +30,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
         {/* Changed href from "#" to "/" to route back to Home */}
         <Link href="/" className="font-mono text-accent_flame text-lg font-semibold tracking-tighter hover:text-accent_flow transition-colors">
-          BS
+          Home
         </Link>
         
         <nav className="hidden md:flex gap-8">

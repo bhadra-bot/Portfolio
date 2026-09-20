@@ -90,7 +90,7 @@ export default function Projects() {
           className="flex items-center gap-4 mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
-            Engineering Projects
+            Competitive Projects
           </h2>
           <div className="h-px bg-border_col flex-grow opacity-50"></div>
         </motion.div>

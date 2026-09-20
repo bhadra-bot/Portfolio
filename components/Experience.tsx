@@ -68,10 +68,15 @@ export default function Experience() {
                 </div>
               )}
 
-              {/* Formatted as a sleek, single paragraph instead of bullet points */}
-              <p className="text-text_secondary text-lg leading-relaxed">
-                {experience[activeTab].points[0]}
-              </p>
+              {/* Loop through points to render bulleted list */}
+              <ul className="flex flex-col gap-4">
+                {experience[activeTab].points.map((point, i) => (
+                  <li key={i} className="flex gap-4 text-text_secondary text-lg leading-relaxed">
+                    <span className="text-accent_flame mt-1.5 text-sm">▹</span>
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
 
             </motion.div>
           </div>

@@ -5,12 +5,12 @@ import { Award, Wrench, Briefcase, BookOpen } from "lucide-react";
 export default function ExtraCurricularsPage() {
   const interests = [
     {
-      title: "Professional Dancer",
+      title: "Inter-Collegiate Dance Team",
       icon: <Award size={26} className="text-accent_flame" />,
       borderColor: "border-accent_flame/30 hover:border-accent_flame/60",
       bgGradient: "from-accent_flame/5",
       glowColor: "bg-accent_flame/10",
-      text: "I am a professional dancer and have secured multiple medals at national competitions. Perfecting a routine demands a high level of physical discipline and focus. This continuous practice has taught me how to remain dedicated and composed under pressure."
+      text: "Represented the institute as an active member of the inter-collegiate dance team. Competed and consistently secured top podium finishes at various prestigious national-level cultural festivals, demonstrating strong teamwork, discipline, and time management alongside rigorous academic commitments."
     },
     {
       title: "Avid Reader",
@@ -18,7 +18,7 @@ export default function ExtraCurricularsPage() {
       borderColor: "border-white/20 hover:border-white/40",
       bgGradient: "from-white/5",
       glowColor: "bg-white/5",
-      text: "I am an avid reader with a deep appreciation for exploring diverse subjects. Consistently engaging with literature allows me to continuously learn new concepts, broadening my perspective and keeping my curiosity sharp outside of academic research."
+      text: "I am an avid reader with a deep appreciation for exploring diverse subjects. Consistently engaging with literature allows me to continuously learn new concepts, broadening my perspective and keeping my curiosity sharp. Moreover I love discussions about books, both fiction and non-fiction alike, so feel free to contact me for any good book suggestions."
     },
     {
       title: "Prototyping & Engineering",
