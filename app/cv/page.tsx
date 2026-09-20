@@ -3,9 +3,12 @@ import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 
 export default function CVPage() {
-  // Dynamically grab the path just like we did for the images!
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   const pdfUrl = `${basePath}/Bhadra_Sreelatha_CV.pdf`;
+  
+  // NEW: We add ?v=2 to the end of the URL. 
+  // Next time you update your CV, you can just change this to ?v=3!
+  const iframeUrl = `${pdfUrl}?v=2#view=FitH`;
 
   return (
     <main className="pt-32 pb-32 min-h-screen">
@@ -41,19 +44,15 @@ export default function CVPage() {
             </a>
           </motion.div>
 
-          {/* PDF Viewer (Upgraded to iframe) */}
+          {/* PDF Viewer */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             className="w-full h-[75vh] md:h-[85vh] border border-border_col rounded-sm overflow-hidden glass-panel bg-surface/50"
           >
-            {/* 
-              Using iframe is much more reliable across all browsers. 
-              #view=FitH tells the PDF to automatically fit the width of the screen! 
-            */}
             <iframe 
-              src={`${pdfUrl}#view=FitH`}
+              src={iframeUrl} // Using the new Cache-Busted URL here
               title="Bhadra Sreelatha CV"
               className="w-full h-full border-none"
             />
