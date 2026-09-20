@@ -18,7 +18,7 @@ export default function ExtraCurricularsPage() {
       borderColor: "border-white/20 hover:border-white/40",
       bgGradient: "from-white/5",
       glowColor: "bg-white/5",
-      text: "I am an avid reader with a deep appreciation for exploring diverse subjects. Consistently engaging with literature allows me to continuously learn new concepts, broadening my perspective and keeping my curiosity sharp. Moreover I love discussions about books, both fiction and non-fiction alike, so feel free to contact me for any good book suggestions."
+      text: "I love books, all the way from contemporary to classic, fiction and non-fiction alike.  Consistently engaging with literature allows me to continuously learn new concepts, broadening my perspective and keeping my mind sharp. Moreover I love discussions about books, so feel free to contact me for any good book suggestions."
     },
     {
       title: "Prototyping & Engineering",

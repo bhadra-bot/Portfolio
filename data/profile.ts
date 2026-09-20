@@ -6,15 +6,14 @@ export const personalInfo = {
   program: "Pursuing 5th year in B.Tech + M.Tech, Aerospace Engineering",
   expectedGraduation: "2027",
   cgpa: "9.20/10",
-  bio: "I am a final year aerospace engineering student, avidly interested in the areas of aero-engines and flows. I am very interested in using visualization techniques to study the evolution of flow behavior. I am deeply interested in the intersection of modeling and experiments, using mathematical models to predict what we observe experimentally. I have been using experimental techniques such as PIV and chemiluminescence imaging to understand flow patterns during transitions to instability in a turbulent combustor. I have extensively worked on the experimental study and modeling of transition and mitigation of instability in thermoacoustic systems. In the Laboratory of Space Utilization at Hokkaido University, I studied microgravity combustion phenomena, which is vital for fire-safety improvement in the International Space Station. Ultimately, I am interested in improving our understanding of fluid physics in aerospace to build safer, more reliable, and efficient systems that fly. I also use nonlinear mdoels to model complex systems and replicate experimentally observed phenomena. My research interests can be summarized as:",
+  bio: "I am a final-year aerospace engineering student from IIT Madras interested in fluid flows, propulsion, and combustion. I am particularly interested in using experimental visualization to understand flow structures and their dynamics, and in combining these observations with modelling to better understand the underlying physics. I enjoy working at the intersection of experiments and modelling, using mathematical and nonlinear models to explain and reproduce phenomena observed experimentally. My recent work under Prof. R. I. Sujith has involved PIV and chemiluminescence imaging to study vortex structures and heat-release dynamics in a turbulent combustor. I have also worked extensively on the experimental study and modelling of thermoacoustic instabilities and their mitigation. At Hokkaido University, I studied combustion under reduced-pressure conditions to understand how microgravity environments affect flame behaviour, with applications to fire safety in space. More broadly, I am interested in understanding fluid dynamics across aerospace applications, from combustion and propulsion to aerodynamics and acoustics, and in using this understanding to develop safer, more reliable, and efficient aerospace systems. My research interests include:",
   // NEW: Add your bullet points here!
   interests: [
     "Flow visualization techniques",
     "Effieciency and performance of propulsion & combustion engineering",
     "Thermoacoustic instabilities",
-    "Combustion phenomena modelling",
     "Aerodynamics, Aeroacoustics, Aeroelasicity",
-    "Nonlinear modelling"
+    "Nonlinear modelling of complex systems"
   ]
 };
 
@@ -51,9 +50,9 @@ export const experience = [
     title: "Thermoacoustic Instabilities & Transition Routes",
     duration: "Nov 2023 - Present",
     points: [
-      "Pattern formation during smooth and abrupt transition to instability in turbulent combustors.",
-      "Shock-induced tipping in a prototypical laminar thermoacoustic system: Rijke Tube.",
-      "Study of hysteresis during subcritical Hopf bifurcation to thermoacoustic instability in a laminar thermoacoustic system."
+      "Pattern formation during smooth and abrupt transition to instability in turbulent combustors: Studying the evolution of flow structures and heat-release patterns during smooth and rapid transitions to thermoacoustic instability in a turbulent combustor. Using PIV and chemiluminescence imaging to characterize vortex dynamics, flame response, and the emergence of coherent spatial patterns.",
+      "Shock-induced tipping in a prototypical laminar thermoacoustic system, Rijke Tube: Investigating rapid parameter changes as a mechanism for triggering transitions between the stable and oscillatory states of a Rijke tube. Combining experiments with nonlinear modelling to understand how transient changes in the auxiliary thermal dynamics can drive the system across basin boundaries and induce tipping.",
+      "Study of hysteresis during subcritical Hopf bifurcation to thermoacoustic instability in a laminar thermoacoustic system: Experimentally and computationally characterized the hysteresis during the transition to and from thermoacoustic instability in a Rijke tube. Obtained the bifurcation of the heating-grid temperature with respect to the voltage supplied to the grid and used it to identify the bistable regime and understand the underlying transition dynamics."
     ]
   },
   {
@@ -74,8 +73,7 @@ export const experience = [
     title: "Mitigation of high frequency instability in rocket propulsion",
     duration: "June - July 2024",
     points: [
-      "Modeled and analyzed the efficiency of Helmholtz and Quincke resonators on rocket propellant feed systems to diagnose flow stability risks and mitigate high-frequency instabilities."
-    ]
+"Modelled Helmholtz and Quincke resonators to study their effectiveness in suppressing pressure oscillations within rocket propellant feed systems. Analysed their dynamic response and attenuation characteristics to identify potential flow stability risks and understand how resonator design can be used to mitigate high-frequency instabilities in propulsion systems."    ]
   },
 
   {
@@ -83,8 +81,7 @@ export const experience = [
     lab: "Kinben Innovation Pvt. Ltd.",
     duration: "May 2025 - July 2025",
     points: [
-      "Engineered EKF-based trajectory reconstruction for pipelines in GPS-denied environments and modeled inspection gauge dynamics via CFD to detect structural anomalies."
-    ]
+"Developed an Extended Kalman Filter (EKF)-based trajectory reconstruction method for pipeline inspection in GPS-denied environments, using onboard sensor measurements to estimate the gauge’s position and motion. Modelled the dynamics of the inspection gauge using CFD to understand its interaction with the flow and identify signatures associated with potential structural anomalies."    ]
   },
 ];
 
@@ -95,7 +92,7 @@ export const engineeringProjects = [
     org: "Guidance, Navigation & Controls Lab",
     guide: "Dr. Satadal Ghosh",
     duration: "May 2024 - June 2025",
-    description: "Developed and simulated a fully autonomous, vision-equipped UAV using the ROS framework and ArduPilot for the Student Unmanned Aerial Systems mission.",
+    description: "Founded and led a new IIT Madras team for the Student Unmanned Aerial Systems competition, bringing together students from different backgrounds to build an autonomous UAV from the ground up. Leading the team across design, software, hardware, and testing and finishing 8th globally for technical design.",
     images: [
       "/suas-1.jpeg", 
       "/suas-2.jpeg"
@@ -107,7 +104,7 @@ export const engineeringProjects = [
     org: "Centre for Innovation, IIT M",
     guide: "Dr. Satya Chakravarthy",
     duration: "May 2023 - June 2024",
-    description: "Engineered India's first SRAD hybrid rocket engine and simulated recovery parachute dynamics for a 10,000 ft altitude deployment.",
+    description: "Designed and developed a student-built sounding rocket for the Spaceport America Cup, including India’s first student-built SRAD hybrid rocket engine and recovery system. The rocket was launched at the competition, finishing 1st in Asia and 21st globally.",
     images: [
       "/rocket-1.jpeg", 
       "/rocket-2.jpeg"
@@ -130,7 +127,7 @@ export const engineeringProjects = [
 
 export const skills = {
   programming: ["Python", "MATLAB", "Octave", "C++", "SIMULINK"],
-  cfd: ["OpenFOAM", "ANSYS"],
+  cfd: ["OpenFOAM", "ANSYS Fluent", "MATLAB CFD Toolbox"],
   modelling: ["Fusion-360", "Ansys", "AutoCAD"],
   electronicSystems: ["Eagle", "KiCad", "Arduino", "EasyEDA"],
   practices: ["LaTeX", "Github", "MS Office"]
@@ -139,27 +136,27 @@ export const skills = {
 export const coursework = [
   {
     course: "Combustion & Flow Diagnostics (Ongoing)",
-    title: "",
+    title: "Studying the Response of a Premixed Bunsen Flame to a Sinusoidal Air Supply",
     guide: "Prof. R. I. Sujith",
-    desc: "Developing Schlieren-based diagnostics to extract burner flame geometry & dynamic response to flow perturbations"
+    desc: "Developing Schlieren-based diagnostics to characterize how a Bunsen flame responds geometrically to acoustic perturbations in the airflow, while investigating its response time across a range of excitation frequencies to better understand the dynamics of flame–flow interactions."
   },
   {
     course: "Acoustic Instabilities in Aerospace Propulsion",
-    title: "", // Left blank as the course itself is the project topic
+    title: "Data-Driven Analysis of Thermoacoustic Dynamics", // Left blank as the course itself is the project topic
     guide: "Prof. R. I. Sujith",
-    desc: "Generated phase space, recurrence plots & complex network plot during instability in turbulent combustor"
+    desc: "Using data from a thermoacoustic rig exhibiting axial instabilities to generate phase-space, recurrence, and complex-network representations to characterizedynamical states such as combustion noise, intermittency, during the transition to thermoacoustic instability using Gephi. Using these complementary approaches to study how the underlying dynamics evolve as the system transitions between these states."
   },
   {
     course: "Introduction to Multiphase Flows",
     title: "Vapor Transport studies",
     guide: "Prof. Mahesh Panchagnula",
-    desc: "Applied Euler-Euler & Euler-Lagrange models to simulate vapor bubble transport condensation boundaries"
+    desc: "Applying Euler–Euler and Euler–Lagrange frameworks to simulate vapor bubble transport and condensation in cool boundaries. Investigating bubble trajectories, phase interactions, and condensation near boundaries to understand how local flow and thermal conditions influence bubble dynamics."
   },
   {
     course: "Introduction to Turbulence",
     title: "Turbulence-Flame interaction",
     guide: "Prof. Sameen A.",
-    desc: "Computed turbulent mixing energy in turbulence flame interactions in a bluff-body stabilized flow using LES"
+    desc: "Using Large Eddy Simulations (LES) to study turbulent mixing and flame–turbulence interactions in a bluff-body-stabilized flow. Analyzing the turbulent mixing energy and its spatial distribution to understand how the flow structures influence mixing and combustion."
   },
   {
     course: "Computational Fluid Dynamics",
@@ -183,7 +180,7 @@ export const coursework = [
     course: "Control Systems",
     title: "Controlling an Inverted Robot",
     guide: "Prof. Manish Anand",
-    desc: "Developed a stable, fast state-space controller & observer to stabilize an inverted robot on a 3-DOF wheel platform"
+    desc: "Developing a state-space controller and observer to stabilize an inverted robot on a 3-DOF wheeled platform. Tuning and optimizing the controller to improve the robot’s stability and response while using state estimation to track its motion."
   }
   
 ];
