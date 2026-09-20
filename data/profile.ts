@@ -62,10 +62,9 @@ export const experience = [
     title: "Reproduction of low-gravity combustion using decompression environment",
     duration: "May - Aug 2026",
     points: [
-      "Conducted experiments on a vaccum sealed chamber to study diffusion flame shapes in microgravity condition suing a low pressure surrogate for varying oxygen concentrations. Existing models of flame behvaiour study does not feature a combination of pressure and oxygen concentration effects, I extended the Roper flame model using the Chapman-Enskog theory and succesfully predicted flame shape behavior under low-pressure and varying oxygen concnetraitons using one model"
+      "Conducted experiments on a vacuum sealed chamber to study diffusion flame shapes in microgravity condition using a low pressure surrogate for varying oxygen concentrations. Existing models of flame behaviour study does not feature a combination of pressure and oxygen concentration effects; I extended the Roper flame model using the Chapman-Enskog theory and successfully predicted flame shape behavior under low-pressure and varying oxygen concentrations using one model."
     ]
   },
-  
   {
     role: "Research Intern",
     lab: "Liquid Propulsion Systems Centre, ISRO",
@@ -73,16 +72,17 @@ export const experience = [
     title: "Mitigation of high frequency instability in rocket propulsion",
     duration: "June - July 2024",
     points: [
-"Modelled Helmholtz and Quincke resonators to study their effectiveness in suppressing pressure oscillations within rocket propellant feed systems. Analysed their dynamic response and attenuation characteristics to identify potential flow stability risks and understand how resonator design can be used to mitigate high-frequency instabilities in propulsion systems."    ]
+      "Modelled Helmholtz and Quincke resonators to study their effectiveness in suppressing pressure oscillations within rocket propellant feed systems. Analysed their dynamic response and attenuation characteristics to identify potential flow stability risks and understand how resonator design can be used to mitigate high-frequency instabilities in propulsion systems."
+    ]
   },
-
   {
     role: "Industrial Research Intern",
     lab: "Kinben Innovation Pvt. Ltd.",
     duration: "May 2025 - July 2025",
     points: [
-"Developed an Extended Kalman Filter (EKF)-based trajectory reconstruction method for pipeline inspection in GPS-denied environments, using onboard sensor measurements to estimate the gauge’s position and motion. Modelled the dynamics of the inspection gauge using CFD to understand its interaction with the flow and identify signatures associated with potential structural anomalies."    ]
-  },
+      "Developed an Extended Kalman Filter (EKF)-based trajectory reconstruction method for pipeline inspection in GPS-denied environments, using onboard sensor measurements to estimate the gauge’s position and motion. Modelled the dynamics of the inspection gauge using CFD to understand its interaction with the flow and identify signatures associated with potential structural anomalies."
+    ]
+  }
 ];
 
 export const engineeringProjects = [

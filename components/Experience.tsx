@@ -6,6 +6,22 @@ import { experience } from "@/data/profile";
 export default function Experience() {
   const [activeTab, setActiveTab] = useState(0);
 
+  // Helper function to split text and make the part before the colon bold
+  const renderPoint = (text: string) => {
+    const colonIndex = text.indexOf(":");
+    if (colonIndex !== -1) {
+      const boldPart = text.substring(0, colonIndex + 1); // Includes the colon
+      const restPart = text.substring(colonIndex + 1);
+      return (
+        <span>
+          <span className="font-bold text-white">{boldPart}</span>
+          {restPart}
+        </span>
+      );
+    }
+    return <span>{text}</span>;
+  };
+
   return (
     <section id="experience" className="w-full mb-32">
       <div className="max-w-6xl mx-auto px-6 w-full">
@@ -68,12 +84,12 @@ export default function Experience() {
                 </div>
               )}
 
-              {/* Loop through points to render bulleted list */}
-              <ul className="flex flex-col gap-4">
+              {/* Loop through points to render bulleted list with bolding logic */}
+              <ul className="flex flex-col gap-6">
                 {experience[activeTab].points.map((point, i) => (
-                  <li key={i} className="flex gap-4 text-text_secondary text-lg leading-relaxed">
-                    <span className="text-accent_flame mt-1.5 text-sm">▹</span>
-                    <span>{point}</span>
+                  <li key={i} className="flex gap-4 text-text_secondary text-base leading-relaxed">
+                    <span className="text-accent_flame mt-1 text-sm shrink-0">▹</span>
+                    {renderPoint(point)}
                   </li>
                 ))}
               </ul>
