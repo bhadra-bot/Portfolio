@@ -47,10 +47,10 @@ export const experience = [
     role: "Undergraduate Researcher",
     lab: "CoE- CTCS, IIT Madras",
     pi: "Dr. R. I. Sujith, Institute Chair Professor",
-    title: "Thermoacoustic Instabilities & Transition Routes",
+    //title: "Thermoacoustic Instabilities & Transition Routes",
     duration: "Nov 2023 - Present",
     points: [
-      "Pattern formation during smooth and abrupt transition to instability in turbulent combustors: \n Studying the evolution of flow structures and heat-release patterns during smooth and rapid transitions to thermoacoustic instability in a turbulent combustor. Using PIV and chemiluminescence imaging to characterize vortex dynamics, flame response, and the emergence of coherent spatial patterns.",
+      "Pattern formation during smooth and abrupt transition to instability in turbulent combustors: Studying the evolution of flow structures and heat-release patterns during smooth and rapid transitions to thermoacoustic instability in a turbulent combustor. Using simultaneous PIV and chemiluminescence imaging to characterize vortex dynamics, flame response, and the emergence of coherent spatial patterns.",
       "Shock-induced tipping in a prototypical laminar thermoacoustic system, Rijke Tube: Investigating rapid parameter changes as a mechanism for triggering transitions between the stable and oscillatory states of a Rijke tube. Combining experiments with nonlinear modelling to understand how transient changes in the auxiliary thermal dynamics can drive the system across basin boundaries and induce tipping.",
       "Study of hysteresis during subcritical Hopf bifurcation to thermoacoustic instability in a laminar thermoacoustic system: Experimentally and computationally characterized the hysteresis during the transition to and from thermoacoustic instability in a Rijke tube. Obtained the bifurcation of the heating-grid temperature with respect to the voltage supplied to the grid and used it to identify the bistable regime and understand the underlying transition dynamics."
     ]
