@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { education, skills, coursework, nonTechnicalCourses, teachingAssistantship } from "@/data/profile"; // Added teachingAssistantship import
+import { education, skills, coursework, nonTechnicalCourses, teachingAssistantship } from "@/data/profile";
 import { GraduationCap, ChevronDown } from "lucide-react";
 
 export default function Education() {
@@ -119,7 +119,7 @@ export default function Education() {
           </div>
 
           {/* Non-Technical Courses Section */}
-          <div className="pt-4 mb-10">
+          <div className="pt-4 mb-14">
             <p className="text-base text-text_secondary italic mb-4">
               Here are some non-technical courses which were really interesting:
             </p>
@@ -135,17 +135,28 @@ export default function Education() {
             </div>
           </div>
 
-          {/* NEW: Teaching Assistantship Section */}
+          {/* NEW: Colorful & Larger Teaching Assistantship Section */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-accent_flame"></span>
+            <h4 className="text-xl font-bold text-white mb-6 flex items-center gap-3">
+              <span className="w-3 h-3 rounded-full bg-accent_flame shadow-[0_0_10px_rgba(255,87,34,0.6)]"></span>
               Teaching Assistantship
             </h4>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-col gap-4">
               {teachingAssistantship.map((ta, i) => (
-                <div key={i} className="flex items-center gap-3 px-5 py-3 bg-surface/30 border border-border_col rounded w-full md:w-auto hover:border-accent_flame/50 transition-colors">
-                  <span className="text-accent_flame font-bold">▹</span>
-                  <span className="text-text_primary font-medium">{ta}</span>
+                <div key={i} className="relative overflow-hidden p-6 md:p-8 bg-gradient-to-r from-accent_flame/10 to-surface/30 border border-accent_flame/30 rounded-lg hover:border-accent_flame/60 transition-colors group">
+                  {/* Vibrant side accent line */}
+                  <div className="absolute top-0 left-0 w-1.5 h-full bg-accent_flame"></div>
+                  
+                  <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mb-3">
+                    <span className="text-xl font-bold text-white">{ta.course}</span>
+                    <span className="hidden md:block text-text_secondary">•</span>
+                    <span className="text-accent_flow font-mono text-sm uppercase tracking-wider bg-accent_flow/10 px-3 py-1 rounded border border-accent_flow/20">
+                      {ta.role}
+                    </span>
+                  </div>
+                  <p className="text-base text-text_primary leading-relaxed mt-2 md:pr-10">
+                    {ta.desc}
+                  </p>
                 </div>
               ))}
             </div>
@@ -157,6 +168,7 @@ export default function Education() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          className="mt-20"
         >
           <h3 className="text-2xl font-bold text-white mb-8 border-b border-border_col pb-3">
             Technical Capabilities
