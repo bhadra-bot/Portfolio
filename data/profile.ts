@@ -193,7 +193,11 @@ export const nonTechnicalCourses = [
 ];
 
 export const teachingAssistantship = [
-  "Low speed Aerodynamics laboratory"
+  {
+    course: "Low speed Aerodynamics laboratory",
+    role: "Teaching Assistant",
+    desc: "Conducting low speed aerodynamics experiments for undergraduate students and evaluation."
+  }
 ];
 
 export const achievements = [
