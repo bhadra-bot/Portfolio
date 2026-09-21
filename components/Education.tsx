@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { education, skills, coursework, nonTechnicalCourses } from "@/data/profile"; // Added nonTechnicalCourses import
+import { education, skills, coursework, nonTechnicalCourses, teachingAssistantship } from "@/data/profile"; // Added teachingAssistantship import
 import { GraduationCap, ChevronDown } from "lucide-react";
 
 export default function Education() {
@@ -118,8 +118,8 @@ export default function Education() {
             ))}
           </div>
 
-          {/* NEW: Non-Technical Courses Section */}
-          <div className="pt-4">
+          {/* Non-Technical Courses Section */}
+          <div className="pt-4 mb-10">
             <p className="text-base text-text_secondary italic mb-4">
               Here are some non-technical courses which were really interesting:
             </p>
@@ -131,6 +131,22 @@ export default function Education() {
                 >
                   {course}
                 </span>
+              ))}
+            </div>
+          </div>
+
+          {/* NEW: Teaching Assistantship Section */}
+          <div>
+            <h4 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-accent_flame"></span>
+              Teaching Assistantship
+            </h4>
+            <div className="flex flex-wrap gap-3">
+              {teachingAssistantship.map((ta, i) => (
+                <div key={i} className="flex items-center gap-3 px-5 py-3 bg-surface/30 border border-border_col rounded w-full md:w-auto hover:border-accent_flame/50 transition-colors">
+                  <span className="text-accent_flame font-bold">▹</span>
+                  <span className="text-text_primary font-medium">{ta}</span>
+                </div>
               ))}
             </div>
           </div>
