@@ -192,6 +192,10 @@ export const nonTechnicalCourses = [
   "Psychology of learning (ongoing)"
 ];
 
+export const teachingAssistantship = [
+  "Low speed Aerodynamics laboratory"
+];
+
 export const achievements = [
   "Ranked in top 99.3 %ile in JEE Advanced and top 99.2 %ile in the JEE Mains out of ~ 1 million candidates",
   "Awarded JASSO scholarship by Ministry of Education, Culture, Sports, Science and Technology (MEXT), Japan",
