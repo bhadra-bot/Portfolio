@@ -6,13 +6,13 @@ export const personalInfo = {
   program: "Pursuing 5th year in B.Tech + M.Tech, Aerospace Engineering",
   expectedGraduation: "2027",
   cgpa: "9.20/10",
-  bio: "I am a final-year aerospace engineering student from IIT Madras interested in fluid flows, propulsion, and combustion. I am particularly interested in using experimental visualization to understand flow structures and their dynamics, and in combining these observations with modelling to better understand the underlying physics. I enjoy working at the intersection of experiments and modelling, using mathematical and nonlinear models to explain and reproduce phenomena observed experimentally. My recent work under Prof. R. I. Sujith has involved PIV and chemiluminescence imaging to study vortex structures and heat-release dynamics in a turbulent combustor. I have also worked extensively on the experimental study and modelling of thermoacoustic instabilities and their mitigation. At Hokkaido University, I studied combustion under reduced-pressure conditions to understand how microgravity environments affect flame behaviour, with applications to fire safety in space. More broadly, I am interested in understanding fluid dynamics across aerospace applications, from combustion and propulsion to aerodynamics and acoustics, and in using this understanding to develop safer, more reliable, and efficient aerospace systems. My research interests include:",
+  bio: "I am a final-year aerospace engineering student from IIT Madras interested in fluid flows, propulsion, and combustion. I am particularly interested in using experimental visualization to understand flow structures and their dynamics, and in combining these observations with modelling to better understand the underlying physics. I enjoy working at the intersection of experiments and modelling, using mathematical and nonlinear models to explain and reproduce phenomena observed experimentally. My recent work under Prof. R. I. Sujith has involved PIV and chemiluminescence imaging to study vortex structures and coherent patterns in heat-release dynamics in a turbulent combustor. I have also worked extensively on the experimental study and modelling of thermoacoustic instabilities and their mitigation. At Hokkaido University, I studied combustion under reduced-pressure conditions to understand how microgravity environments affect flame behaviour, with applications to fire safety in space. More broadly, I am interested in understanding fluid dynamics across aerospace applications, from combustion and propulsion to aerodynamics and acoustics, and in using this understanding to develop safer, more reliable, and efficient aerospace systems. My research interests include:",
   // NEW: Add your bullet points here!
   interests: [
-    "Flow visualization techniques",
-    "Effieciency and performance of propulsion & combustion engineering",
+    "Flow visualization techniques and non-intrusive diagnostics",
+    "Efficiency and performance of propulsion & combustion engineering",
     "Thermoacoustic instabilities",
-    "Aerodynamics, Aeroacoustics, Aeroelasicity",
+    "Aerodynamics, Aeroacoustics, Aeroelasticity",
     "Nonlinear modelling of complex systems"
   ]
 };
