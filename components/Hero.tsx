@@ -21,9 +21,6 @@ export default function Hero() {
           <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-white mb-6">
             {personalInfo.name}
           </h1>
-          <h2 className="text-3xl md:text-5xl font-semibold text-text_secondary mb-8">
-            Thermoacoustics & Fluids Researcher
-          </h2>
           
           <p className="text-lg text-text_secondary leading-relaxed mb-4 max-w-2xl">
             {personalInfo.bio}
