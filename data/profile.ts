@@ -196,7 +196,7 @@ export const teachingAssistantship = [
   {
     course: "Low speed Aerodynamics laboratory",
     role: "Teaching Assistant",
-    desc: "Conducting low speed aerodynamics experiments for undergraduate students and evaluation."
+    desc: "Guided undergraduate students through low-speed aerodynamics experiments and evaluated their laboratory performance"
   }
 ];
 
